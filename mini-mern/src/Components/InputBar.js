@@ -3,6 +3,8 @@ import { React, Component } from 'react';
 export default class InputBar extends Component {
     render() {
         return (
+            <div>
+            <label htmlFor={this.props.name}>{this.props.id}</label>
             <input
                 type={this.props.type || 'text'}
                 placeholder={this.props.place || this.props.name || ''}
@@ -10,6 +12,7 @@ export default class InputBar extends Component {
                 value={this.props.value || ''}
                 name={this.props.name || ''}
             />
+            </div>
         );
     }
 }

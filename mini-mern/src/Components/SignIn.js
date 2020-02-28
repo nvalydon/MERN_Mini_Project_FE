@@ -29,8 +29,10 @@ export default class SignIn extends Component {
                 <form name="inputForm" onSubmit={this.handleSubmit}>
                     <InputBar name="username" place="Username" value={this.state.username} handleChange={this.handleChange}></InputBar><br />
                     <InputBar name="password" place="Password" type="password" value={this.state.password} handleChange={this.handleChange}></InputBar><br />
-                    <input type="submit" />
+                    <input type="submit" value="Log in" />
                 </form>
+                <br />
+                <input type="submit" value="Register an account" />
             </div>
         );
     }

@@ -8,9 +8,7 @@ export default class WelcomePage extends Component {
         super(props);
         this.state = {
             username: "",
-            email: "",
-            password: "",
-            passwordValidate: ""
+            email: ""
         };
     };
 
@@ -20,10 +18,10 @@ export default class WelcomePage extends Component {
                 <NavBar></NavBar>
                 <br />
                 <p>Welcome</p>
-            <form name="inputForm">
-                <InputBar name="username" class="Username:   " value={this.state.username}></InputBar><br />
-                <InputBar name="email" class="E-Mail:   " value={this.state.email}></InputBar><br />
-            </form>
+                <form name="inputForm">
+                    <InputBar name="username" class="Username:   " value={this.state.username}></InputBar><br />
+                    <InputBar name="email" class="E-Mail:   " value={this.state.email}></InputBar><br />
+                </form>
             </div>
         );
     }

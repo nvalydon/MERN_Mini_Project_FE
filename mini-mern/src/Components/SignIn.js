@@ -8,7 +8,6 @@ export default class SignIn extends Component {
         super(props);
         this.state = {
             username: "",
-            email: "",
             password: ""
         };
     };
@@ -19,7 +18,7 @@ export default class SignIn extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state.username + '\n' + this.state.email + '\n' + this.state.password);
+        console.log(this.state.username + '\n' + this.state.password);
     }
 
     render() {
@@ -27,11 +26,11 @@ export default class SignIn extends Component {
             <div >
                 <NavBar></NavBar>
                 <br />
-            <form name="inputForm" onSubmit={this.handleSubmit}>
-                <InputBar name="username" place="Username" value={this.state.username} handleChange={this.handleChange}></InputBar><br />
-                <InputBar name="password" place="Password" value={this.props.password} handleChange={this.handleChange}></InputBar><br />
-                <input type="submit"/>
-            </form>
+                <form name="inputForm" onSubmit={this.handleSubmit}>
+                    <InputBar name="username" place="Username" value={this.state.username} handleChange={this.handleChange}></InputBar><br />
+                    <InputBar name="password" place="Password" type="password" value={this.state.password} handleChange={this.handleChange}></InputBar><br />
+                    <input type="submit" />
+                </form>
             </div>
         );
     }

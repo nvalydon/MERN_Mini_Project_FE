@@ -1,7 +1,15 @@
-import { React } from 'react';
+import { React, Component } from 'react';
 
-export default function InputBar(){
-    return(
-        <input></input>
-    )
+export default class InputBar extends Component {
+    render() {
+        return (
+            <input
+                type={this.props.type || 'text'}
+                placeholder={this.props.place || this.props.name || ''}
+                onChange={this.props.handleChange}
+                value={this.props.value || ''}
+                name={this.props.name || ''}
+            />
+        );
+    }
 }

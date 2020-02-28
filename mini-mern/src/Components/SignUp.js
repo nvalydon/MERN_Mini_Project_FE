@@ -40,6 +40,9 @@ export default class SignUp extends Component {
                 <InputBar name="passwordValidate" place="Re-Enter Password" value={this.state.passwordValidate} type="password" handleChange={this.handleChange} required></InputBar><br />
                 <input type="submit"></input>
             </form>
+            <br />
+            <input type="submit" value="Log in to existing account" onClick={this.props.history.push('/')}/>
+
             </div>
         );
     }

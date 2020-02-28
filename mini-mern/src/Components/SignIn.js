@@ -28,8 +28,8 @@ export default class SignIn extends Component {
                 <NavBar></NavBar>
                 <br />
             <form name="inputForm" onSubmit={this.handleSubmit}>
-                <InputBar name="username" class="Username:   " value={this.state.username} handleChange={this.handleChange}></InputBar><br />
-                <InputBar name="password" class="Password:   " value={this.props.password} handleChange={this.handleChange}></InputBar><br />
+                <InputBar name="username" class="Username:" value={this.state.username} handleChange={this.handleChange}></InputBar><br />
+                <InputBar name="password" class="Password:" value={this.props.password} handleChange={this.handleChange}></InputBar><br />
                 <button>Submit</button>
             </form>
             </div>

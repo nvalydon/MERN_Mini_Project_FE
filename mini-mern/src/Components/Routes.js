@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
-import NavBar from './NavBar';
 import Footer from "./Footer";
 
 export default function Routes() {

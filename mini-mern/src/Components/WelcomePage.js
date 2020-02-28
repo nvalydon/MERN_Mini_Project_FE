@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import InputBar from './InputBar';
-import NavBar from "./NavBar"
+import NavBar2 from "./NavBar2"
 
 export default class WelcomePage extends Component {
 
@@ -15,7 +15,7 @@ export default class WelcomePage extends Component {
     render() {
         return (
             <div>
-                <NavBar></NavBar>
+                <NavBar2></NavBar2>
                 <br />
                 <h1>Welcome! Here Are Your Details!</h1>
                 <form name="inputForm">

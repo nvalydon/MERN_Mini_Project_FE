@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import InputBar from './InputBar';
 import NavBar2 from "./NavBar2"
+import Axios from 'axios';
 
 export default class WelcomePage extends Component {
 
@@ -11,6 +12,12 @@ export default class WelcomePage extends Component {
             email: ""
         };
     };
+    componentDidMount =()=>{
+        Axios.get("http://192.168.1.124:9090/users/get/"+this.props.username)
+        .then((response)=>{
+            this.setState({username:response.data.username,email:response.data.email});
+        })
+    }
 
     render() {
         return (

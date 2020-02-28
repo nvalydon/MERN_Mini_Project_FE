@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import InputBar from './InputBar';
-import NavBar from "./NavBar"
+import NavBar from "./NavBar";
+import axios from "axios";
 
 export default class SignUp extends Component {
 
@@ -24,7 +25,15 @@ export default class SignUp extends Component {
     }
 
     loadWelcome() {
-        this.props.history.push('/welcome')
+        axios.post("http://192.168.1.124:9090/users/createPlayer",{
+            username:this.state.username,
+            email:this.state.email,
+            password:this.state.password
+        })
+        .then(()=>{
+            this.props.history.push('/welcome',this.state.username)
+        })
+        
     }
 
     loadLogIn = (event) => {

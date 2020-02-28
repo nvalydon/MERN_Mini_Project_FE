@@ -3,7 +3,6 @@ import './App.css';
 
 import NavBar from './Components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {

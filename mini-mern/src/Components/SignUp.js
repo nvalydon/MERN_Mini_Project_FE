@@ -27,6 +27,11 @@ export default class SignUp extends Component {
         this.props.history.push('/welcome')
     }
 
+    loadLogIn = (event) => {
+        event.preventDefault();
+        this.props.history.push('/')
+    }
+
     render() {
         return (
             <div>
@@ -41,7 +46,7 @@ export default class SignUp extends Component {
                 <input type="submit"></input>
             </form>
             <br />
-            <input type="submit" value="Log in to existing account" onClick={this.props.history.push('/')}/>
+            <input type="submit" value="Log in to existing account" onClick={this.loadLogIn}/>
 
             </div>
         );

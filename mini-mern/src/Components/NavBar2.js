@@ -7,7 +7,7 @@ export default function NavBar2() {
 
 
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="dark" variant ="dark" expand="lg">
             <Navbar.Brand href="/">MERN Sign Up
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

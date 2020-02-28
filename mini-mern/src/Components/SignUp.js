@@ -20,7 +20,11 @@ export default class SignUp extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state.username + '\n' + this.state.email + '\n' + this.state.password);
+        (this.state.password === this.state.passwordValidate)? this.loadWelcome() :alert("Password mismatch");;
+    }
+
+    loadWelcome() {
+        console.log ("bluh");
     }
 
     render() {

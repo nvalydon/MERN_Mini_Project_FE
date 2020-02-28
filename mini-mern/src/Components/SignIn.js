@@ -24,13 +24,13 @@ export default class SignIn extends Component {
 
     render() {
         return (
-            <div>
+            <div >
                 <NavBar></NavBar>
                 <br />
             <form name="inputForm" onSubmit={this.handleSubmit}>
-                <InputBar name="username" class="Username:" value={this.state.username} handleChange={this.handleChange}></InputBar><br />
-                <InputBar name="password" class="Password:" value={this.props.password} handleChange={this.handleChange}></InputBar><br />
-                <button>Submit</button>
+                <InputBar name="username" place="Username" value={this.state.username} handleChange={this.handleChange}></InputBar><br />
+                <InputBar name="password" place="Password" value={this.props.password} handleChange={this.handleChange}></InputBar><br />
+                <input type="submit"/>
             </form>
             </div>
         );

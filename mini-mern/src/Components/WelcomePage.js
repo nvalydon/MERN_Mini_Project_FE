@@ -8,9 +8,7 @@ export default class WelcomePage extends Component {
         super(props);
         this.state = {
             username: "",
-            email: "",
-            password: "",
-            passwordValidate: ""
+            email: ""
         };
     };
 

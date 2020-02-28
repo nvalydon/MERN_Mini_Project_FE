@@ -39,9 +39,10 @@ export default class SignUp extends Component {
                 <InputBar name="password" place="Password" id="signuppassword" value={this.state.password} type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" handleChange={this.handleChange} required></InputBar><br />
                 <InputBar name="passwordValidate" place="Re-Enter Password" value={this.state.passwordValidate} type="password" handleChange={this.handleChange} required></InputBar><br />
                 <input type="submit"></input>
-                <br />
-                <input type="submit" value="Log in to existing account" onClick={this.props.history.push('/')}/>
             </form>
+            <br />
+            <input type="submit" value="Log in to existing account" onClick={this.props.history.push('/')}/>
+
             </div>
         );
     }

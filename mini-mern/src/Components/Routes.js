@@ -1,13 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
+import NavBar from './NavBar';
+import Footer from "./Footer";
 
-export default function Routes(){
-    return(
+export default function Routes() {
+    return (
         <Router>
             <Route exact path='/' component={SignIn}></Route>
             <Route exact path='/signup' component={SignUp}></Route>
+            <Footer></Footer>
+
         </Router>
     )
 }

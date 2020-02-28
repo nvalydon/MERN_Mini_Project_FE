@@ -31,8 +31,8 @@ export default class SignUp extends Component {
         return (
             <div>
                 <NavBar></NavBar>
+                <h1>Welcome! Please Register An Account!</h1>
                 <br />
-                <p>Sign Up</p>
             <form name="inputForm" onSubmit={this.handleSubmit}>
                 <InputBar name="username" place="Username" value={this.state.username} handleChange={this.handleChange} required></InputBar><br />
                 <InputBar name="email" place="E-Mail" value={this.state.email} type="email" handleChange={this.handleChange} required></InputBar><br />

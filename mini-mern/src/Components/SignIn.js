@@ -25,6 +25,7 @@ export default class SignIn extends Component {
         return (
             <div >
                 <NavBar></NavBar>
+                <h1>Welcome! Please Log In To Your Account!</h1>
                 <br />
                 <form name="inputForm" onSubmit={this.handleSubmit}>
                     <InputBar name="username" place="Username" value={this.state.username} handleChange={this.handleChange}></InputBar><br />

@@ -17,7 +17,7 @@ export default class WelcomePage extends Component {
             <div>
                 <NavBar></NavBar>
                 <br />
-                <p>Welcome</p>
+                <h1>Welcome! Here Are Your Details!</h1>
                 <form name="inputForm">
                     <InputBar name="username" class="Username:   " value={this.state.username}></InputBar><br />
                     <InputBar name="email" class="E-Mail:   " value={this.state.email}></InputBar><br />

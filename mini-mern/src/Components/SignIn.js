@@ -21,6 +21,9 @@ export default class SignIn extends Component {
         console.log(this.state.username + '\n' + this.state.password);
     }
 
+    onClick =()=>{
+        this.props.history.push("/signup");
+    }
     render() {
         return (
             <div >
@@ -33,7 +36,7 @@ export default class SignIn extends Component {
                     <input type="submit" value="Log in" />
                 </form>
                 <br />
-                <input type="submit" value="Register an account" />
+                <input type="submit" value="Register an account" onClick={this.onClick}/>
             </div>
         );
     }

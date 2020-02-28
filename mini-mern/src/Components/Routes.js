@@ -10,7 +10,7 @@ export default function Routes() {
         <Router>
             <Route exact path='/' component={SignIn}></Route>
             <Route exact path='/signup' component={SignUp}></Route>
-            <Route exact path="/welcome" component={WelcomePage}/>
+            <Route exact path="/welcome/:username" component={WelcomePage}/>
             <Footer></Footer>
 
         </Router>
